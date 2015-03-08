@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		839A004F1AACE5D200E68FFF /* FactoryObjectSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 839A004D1AACE5D200E68FFF /* FactoryObjectSpec.m */; };
 		839A00541AACE63000E68FFF /* FBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 839A00521AACE63000E68FFF /* FBUser.m */; };
+		839A006A1AAD075C00E68FFF /* OSXTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 839A00691AAD075C00E68FFF /* OSXTests-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,10 +18,19 @@
 		839A004D1AACE5D200E68FFF /* FactoryObjectSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactoryObjectSpec.m; sourceTree = "<group>"; };
 		839A00511AACE63000E68FFF /* FBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBUser.h; sourceTree = "<group>"; };
 		839A00521AACE63000E68FFF /* FBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBUser.m; sourceTree = "<group>"; };
+		839A00601AAD06F200E68FFF /* OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		839A00691AAD075C00E68FFF /* OSXTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OSXTests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8305EC2D1AACDC7C00C88EE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839A005D1AAD06F200E68FFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +46,7 @@
 				839A004C1AACE5D200E68FFF /* Tests */,
 				839A00501AACE63000E68FFF /* Models */,
 				8305EC401AACDED500C88EE6 /* iOSTests */,
+				839A00611AAD06F200E68FFF /* OSXTests */,
 				8305EC181AACDC7C00C88EE6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				8305EC301AACDC7C00C88EE6 /* iOSTests.xctest */,
+				839A00601AAD06F200E68FFF /* OSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,7 +63,7 @@
 		8305EC401AACDED500C88EE6 /* iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				8305EC421AACDED500C88EE6 /* iOSTests-Info.plist */,
+				839A006B1AAD078F00E68FFF /* Supporting Files */,
 			);
 			path = iOSTests;
 			sourceTree = "<group>";
@@ -71,6 +83,30 @@
 				839A00521AACE63000E68FFF /* FBUser.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		839A00611AAD06F200E68FFF /* OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				839A00621AAD06F200E68FFF /* Supporting Files */,
+			);
+			path = OSXTests;
+			sourceTree = "<group>";
+		};
+		839A00621AAD06F200E68FFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				839A00691AAD075C00E68FFF /* OSXTests-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		839A006B1AAD078F00E68FFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8305EC421AACDED500C88EE6 /* iOSTests-Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +129,23 @@
 			productReference = 8305EC301AACDC7C00C88EE6 /* iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		839A005F1AAD06F200E68FFF /* OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839A00681AAD06F200E68FFF /* Build configuration list for PBXNativeTarget "OSXTests" */;
+			buildPhases = (
+				839A005C1AAD06F200E68FFF /* Sources */,
+				839A005D1AAD06F200E68FFF /* Frameworks */,
+				839A005E1AAD06F200E68FFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSXTests;
+			productName = OSXTests;
+			productReference = 839A00601AAD06F200E68FFF /* OSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -103,6 +156,9 @@
 				ORGANIZATIONNAME = mariabernis;
 				TargetAttributes = {
 					8305EC2F1AACDC7C00C88EE6 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					839A005F1AAD06F200E68FFF = {
 						CreatedOnToolsVersion = 6.1;
 					};
 				};
@@ -121,6 +177,7 @@
 			projectRoot = "";
 			targets = (
 				8305EC2F1AACDC7C00C88EE6 /* iOSTests */,
+				839A005F1AAD06F200E68FFF /* OSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +190,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		839A005E1AAD06F200E68FFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839A006A1AAD075C00E68FFF /* OSXTests-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,6 +207,13 @@
 			files = (
 				839A00541AACE63000E68FFF /* FBUser.m in Sources */,
 				839A004F1AACE5D200E68FFF /* FactoryObjectSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839A005C1AAD06F200E68FFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +255,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -219,6 +292,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -256,6 +330,43 @@
 			};
 			name = Release;
 		};
+		839A00661AAD06F200E68FFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OSXTests/OSXTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		839A00671AAD06F200E68FFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OSXTests/OSXTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,6 +387,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		839A00681AAD06F200E68FFF /* Build configuration list for PBXNativeTarget "OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839A00661AAD06F200E68FFF /* Debug */,
+				839A00671AAD06F200E68FFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,11 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol FactoryBirdObject <NSObject>
-@required
-+ (NSDictionary *)factoryAttributes;
-@end
-
 @interface NSObject (FactoryBird) <NSObject>
 + (instancetype)build;
 + (instancetype)buildUsing:(NSDictionary *)attributes;

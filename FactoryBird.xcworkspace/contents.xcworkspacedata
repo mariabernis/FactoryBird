@@ -8,6 +8,9 @@
          location = "group:FactoryBird.h">
       </FileRef>
       <FileRef
+         location = "group:FactoryBirdObject.h">
+      </FileRef>
+      <FileRef
          location = "group:NSManagedObject+FactoryBird.h">
       </FileRef>
       <FileRef
@@ -22,5 +25,8 @@
    </Group>
    <FileRef
       location = "group:FactoryBirdTests/FactoryBirdTests.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FactoryBirdTests/Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

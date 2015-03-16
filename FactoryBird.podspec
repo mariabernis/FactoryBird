@@ -13,7 +13,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'FactoryBird/*.{h,m}'
-  # s.resources = 'FactoryBird/Assets/*.json'
-  # s.private_header_files = 'FactoryBird/Private/*.h'
   s.frameworks = 'Foundation'
 end

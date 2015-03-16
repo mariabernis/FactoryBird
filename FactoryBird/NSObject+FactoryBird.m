@@ -1,11 +1,3 @@
-//
-//  NSObject+FactoryBird.m
-//  Redbooth
-//
-//  Created by Maria Bernis on 20/02/15.
-//  Copyright (c) 2015 teambox. All rights reserved.
-//
-
 #import "NSObject+FactoryBird.h"
 #import <objc/runtime.h>
 
@@ -23,9 +15,8 @@
     if (attributes.count) [mergedAttrs addEntriesFromDictionary:attributes];
     NSArray *propertyList = [self propertyList];
     for (NSString *propertyName in propertyList) {
-        NSString *attribute = mergedAttrs[propertyName];
-        if (attribute) {
-            [factoryObj setValue:attribute forKey:propertyName];
+        if (mergedAttrs[propertyName]) {
+            [factoryObj setValue:mergedAttrs[propertyName] forKey:propertyName];
         }
     }
     return factoryObj;

@@ -1,6 +1,6 @@
 # FactoryBird
 
-FactoryBird is an objective-c library to easily create a set of fake models fixture for unit testing in objective-c. It allows to easily configure and create objects with fake data that you can use in your tests to have an isolated know state.    
+FactoryBird is an objective-c library to easily create a set of fake models fixture for unit testing. It allows to easily configure and create objects with fake data that you can use in your tests to have an isolated know state.    
 
 
 Sounds like FactoryGirl

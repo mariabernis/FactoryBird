@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "FactoryBird"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.summary          = "A library for setting up Objective-c objects as test data."
   s.homepage         = "https://github.com/mariabernis/FactoryBird"
   s.social_media_url = 'https://twitter.com/mariabernis'
@@ -13,7 +13,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'FactoryBird/*.{h,m}'
-  # s.resources = 'FactoryBird/Assets/*.json'
-  # s.private_header_files = 'FactoryBird/Private/*.h'
   s.frameworks = 'Foundation'
 end

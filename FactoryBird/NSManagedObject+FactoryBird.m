@@ -1,11 +1,3 @@
-//
-//  NSManagedObject+FactoryBird.m
-//  Redbooth
-//
-//  Created by Maria Bernis on 25/02/15.
-//  Copyright (c) 2015 teambox. All rights reserved.
-//
-
 #import "NSManagedObject+FactoryBird.h"
 
 @implementation NSManagedObject (FactoryBird)

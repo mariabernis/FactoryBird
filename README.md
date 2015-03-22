@@ -107,7 +107,7 @@ However, you can also leave the class unchanged and add a new category to the te
 
 Using factories
 ---------
-Once you've created the factory, using it in your tests is very simple. 
+Once you've defined the factory, creating fresh fixtures in your tests is very simple. 
 
 ##### Build an object:
 
@@ -124,13 +124,13 @@ The dictionary you pass in will add the properties to the `Task` object if the f
 ##### Build bunch of objects in a row
 
 ```objective-c
-NSArray *tasks = [Task buildTimes:@20];
+NSArray *tasks = [Task buildTimes:20];
 ```
 
 ##### Build bunch of objects passing specific properties
 
 ```objective-c
-NSArray *tasksWithProjects = [Task buildTimes:@20 using:^NSDictionary *(NSUInteger idx) {
+NSArray *tasksWithProjects = [Task buildTimes:20 using:^NSDictionary *(NSUInteger idx) {
         return @{@"project": [Project build]};
     }];
 ```
